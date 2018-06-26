@@ -3,7 +3,7 @@ function performMultiply(){
 	var n1 = $.request.parameters.get('num1');
 	var n2 = $.request.parameters.get('num2');
 	var answer;
-	
+	var ans;
 	answer = n1 * n2;
 	
 	body = answer.toString();
