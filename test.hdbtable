@@ -1,0 +1,6 @@
+table.schemaName = "HANAE2E_XSC";
+table.tableType = COLUMNSTORE;
+table.columns = [
+{name = "Name"; sqlType = VARCHAR; length = 20; comment = "dummy comment";},
+{name = "Address"; sqlType = VARCHAR;},
+{name = "Age"; sqlType = INTEGER;}];
