@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="test1" applyPrivilegeType="ANALYTIC_PRIVILEGE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="2.3" defaultClient="$$client$$" visibility="internal" outputViewType="Projection" calculationScenarioType="TREE_BASED" enforceSqlExecution="false">
+<descriptions defaultDescription="test"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="test_package::test" type="DATA_BASE_TABLE">
+    <viewAttributes allViewAttributes="true"/>
+    <columnObject schemaName="HANAE2E_XSC" columnObjectName="test_package::test"/>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="test_package::test">
+  <attributes>
+    <attribute id="Address" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Address"/>
+      <keyMapping schemaName="HANAE2E_XSC" columnObjectName="test_package::test" columnName="Address"/>
+    </attribute>
+    <attribute id="Age" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Age"/>
+      <keyMapping schemaName="HANAE2E_XSC" columnObjectName="test_package::test" columnName="Age"/>
+    </attribute>
+    <attribute id="Name" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Name"/>
+      <keyMapping schemaName="HANAE2E_XSC" columnObjectName="test_package::test" columnName="Name"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
